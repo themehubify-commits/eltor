@@ -12,7 +12,7 @@ function Footer() {
             <h3 className="font-semibold mb-2 ">MAIN MENU</h3>
             <div className="flex gap-2 text-shadow-mauve-100 text-sm">
               <Link to="ourstandards">OurStandards</Link>
-              <Link to="sclence">TheSclence</Link>
+              <Link to="sclence">TheScience</Link>
               <Link to="thecream">TheCream</Link>
               <Link to="/">Home</Link>
             </div>

@@ -18,7 +18,7 @@ export default function Navber (){
 
        
         <div className="flex gap-6 text-sm font-medium">
-          <Link to="/"> Home</Link>
+          <Link to="/"> HOME</Link>
           <Link to="OurStandards">OUR STANDARDS</Link>
           <Link to="sclence">THE SCIENCE</Link>
           <Link to="thecream">THE CREAM</Link>

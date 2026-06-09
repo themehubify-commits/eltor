@@ -99,9 +99,9 @@ function OurStandards() {
           <p className="text-[#8f6424] ml-[25px] mb-[16 0px]">
             SO THE SKIN CAN PROTECT ITSELF
           </p>
-          <hr className="ml-[25px] w-[1000px] text-[#8f6424] p-[5px]" />
+          <hr className="ml-[25px] w-[900px] text-[#8f6424] p-[5px]" />
 
-          <div className="flex gap-[5px] ml-[25px]">
+          <div className="flex gap-[20px] ml-[25px]">
             <div>
               <h4 className="text-[#8f6424] mb-[10px] font-bold text-[18px]">
                 CERAMIDE
@@ -110,7 +110,7 @@ function OurStandards() {
                 Rebuild the skin barrier and protectr the skin <br /> from
                 external stressors
               </p>
-              <img className="w-[450px] h-[400px]" src={bg3} />
+              <img className="w-[280px] h-[300px]" src={bg3} />
             </div>
             <div>
               <h4 className="text-[#8f6424] mb-[10px] font-bold text-[18px]">
@@ -120,10 +120,10 @@ function OurStandards() {
                 Strengthens the skin barrier while soothing <br /> and restoring
                 sensitive skin
               </p>
-              <img className="w-[450px] h-[400px]" src={bg4} />
+              <img className="w-[280px] h-[300px]" src={bg4} />
             </div>
             <div>
-              <img className="w-[800px] h-[800px] mt-[-50px]" src={bg6} />
+              <img className="w-[402px] h-[550px]  mt-[-170px] ml-[70px] -rotate-30 " src={bg6} />
             </div>
           </div>
         </section>

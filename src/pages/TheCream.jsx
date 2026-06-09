@@ -40,6 +40,15 @@ function TheCream() {
     },
   ];
 
+    const ratings = [
+    { star: 5, count: 9, width: "90%" },
+    { star: 4, count: 1, width: "10%" },
+    { star: 3, count: 0, width: "0%" },
+    { star: 2, count: 0, width: "0%" },
+    { star: 1, count: 0, width: "0%" },
+  ];
+
+  
   return (
     <>
       <section className="border border-[#8f6424] mb-[5px]">
@@ -166,30 +175,125 @@ function TheCream() {
         </div>
       </section>
 
-      <section>
+      <section className="m-[95px]">
 
-        <section>
-           <div className="flex">
+        <section className="mb-[30px]">
+           <div className="flex gap-[650px]">
             <div>
-                <h4>REVIEWS</h4>
-                <p className="flex">4.9 
+                <h4 className="text-[24px] font-semibold mb-[20px]">REVIEWS</h4>
+                <p className="flex mb-[15px] text-[20px] text-[#000] font-normal gap-[5px]">4.9 
+                  <p className=" flex text-[#8f6424] mt-[5px]">
                   <IoMdStar />
                   <IoMdStar />
                   <IoMdStar />
                   <IoMdStar />
                   <IoMdStar />
-                  <span>(Based on 10 reviews)</span>
+                  </p>
+                  <span className="text-[#00000090] ml-[5px] text-[12px] mt-[7px]">(Based on 10 reviews)</span>
                 </p>
                 <div>
-                  
-                </div>
+  {ratings.map((item) => (
+    <div key={item.star}
+    className="flex items-center gap-3"
+    >
+      
+      <div className="flex items-center gap-1 text-[#8f6424]">
+        <span>{item.star}</span>
+        <IoMdStar />
+      </div>
+
+      <div className="flex-1 h-2 bg-gray-200 rounded">
+        <div
+        className="h-full bg-yellow-700 rounded"
+          style={{ width: item.width }}
+        ></div>
+      </div>
+
+      <span>{item.count}</span>
+
+    </div>
+  ))}
+</div>
             </div>
-            <div>
-              <button>WRITE A REVIEWS</button>
+            
+            <div className="mt-[180px]">
+              <button className=" bg-black text-[#fff] p-[8px] cursor-pointer">WRITE A REVIEWS</button>
             </div>
            </div>
         </section>
+        <hr />
+         <h4 className="mt-[20px] mb-[20px]">Highest Rating <span className="cursor-pointer">⌄</span></h4>
+         <hr className="text-[#8f6424]" />
 
+         <section className="mt-[50px] mb-[20px]">
+          <div className="flex gap-[70px] ">
+
+            <div>
+              <h4>Elior Kim</h4>
+            </div>
+            <div>
+              <h1 className="text-[#8f6424] mb-[15px] flex">
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+              </h1>
+                <h4 className="mb-[15px]">Cant stop using it!</h4>
+                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br /> apply - or tap in my face. I feel like a dermatologist now :) </p>
+            </div>
+            <div>
+                 <p className="mt-[-20px] ml-[-70px]">2 days ago</p>
+            </div>
+          </div>
+         </section>
+         <hr />
+         <section className="mt-[50px] mb-[20px]">
+          <div className="flex gap-[70px] ">
+
+            <div>
+              <h4>Elior Kim</h4>
+            </div>
+            <div>
+              <h1 className="text-[#8f6424] mb-[15px] flex">
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+              </h1>
+                <h4 className="mb-[15px]">Cant stop using it!</h4>
+                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br /> apply - or tap in my face. I feel like a dermatologist now :) </p>
+            </div>
+            <div>
+                 <p className="mt-[-20px] ml-[-70px]">2 days ago</p>
+            </div>
+          </div>
+         </section>
+          <hr />
+         <section className="mt-[50px] ">
+          <div className="flex gap-[70px] ">
+
+            <div>
+              <h4>Elior Kim</h4>
+            </div>
+            <div>
+              <h1 className="text-[#8f6424] mb-[15px] flex">
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+                <IoMdStar />
+              </h1>
+                <h4 className="mb-[15px]">Cant stop using it!</h4>
+                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br /> apply - or tap in my face. I feel like a dermatologist now :) </p>
+            </div>
+            <div>
+                 <p className="mt-[-20px] ml-[-70px]">2 days ago</p>
+            </div>
+          </div>
+         </section>
+         <button className="bg-black text-[#fff] mt-[80px] ml-[50%] text-[15px] cursor-pointer w-[130px] p-[6px]">SHOW MORE</button>
       </section>
       <Footer />
     </>

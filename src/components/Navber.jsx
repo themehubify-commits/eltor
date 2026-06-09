@@ -21,7 +21,7 @@ export default function Navber (){
           <Link to="/"> HOME</Link>
           <Link to="OurStandards">OUR STANDARDS</Link>
           <Link to="sclence">THE SCIENCE</Link>
-          <Link to="thecream">THE CREAM</Link>
+          <Link to="thecream">ADD TO CART</Link>
         </div>
 
         

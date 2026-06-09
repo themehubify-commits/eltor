@@ -172,7 +172,7 @@ function Home() {
           </div>
 
           <img
-            className="mr-[500px] mt-[65px] h-[500px] w-[450px] "
+            className=" -rotate-13 ml-[-110px]  mr-[500px]  h-[488px] w-[620px] "
             src={eliorImage}
             alt=""
           />

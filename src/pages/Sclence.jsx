@@ -190,7 +190,7 @@ function Sclence() {
           className="w-full bg-center bg-cover h-[900px]  mt-[2px]"
         >
           <div className="text-center pt-30">
-            <h3 className="text-[50px] font-bold ">ONE CREAM. BUILT FOR SAFETY.</h3>
+            <h3 className="text-[50px] font-bold mt-[-40px]">ONE CREAM. BUILT FOR SAFETY.</h3>
             <p className="text-[20px] mt-[20px] font-medium">
               Fewer surprises, less irritation <br /> Hydration that lasts throughout
               the day <br /> A formula designed to support skin barrier recovery

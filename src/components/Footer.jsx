@@ -13,7 +13,7 @@ function Footer() {
             <div className="flex gap-2 text-shadow-mauve-100 text-sm">
               <Link to="ourstandards">OurStandards</Link>
               <Link to="sclence">TheScience</Link>
-              <Link to="thecream">TheCream</Link>
+              <Link to="thecream">Add To</Link>
               <Link to="/">Home</Link>
             </div>
           </div>

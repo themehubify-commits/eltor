@@ -85,7 +85,7 @@ function Home() {
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 md:mb-[60px] gap-10  text-center md:text-left">
             <div>
               <img
-                className="w-full max-w-[260px] md:h-[300px] object-cover md:mb-[10px] md:ml-[0px] ml-[100px]"
+                className="w-full max-w-[260px] md:h-[300px] object-cover md:mb-[10px] md:ml-[0px] ml-[80px]"
                 src={flower}
                 alt=""
               />
@@ -93,7 +93,7 @@ function Home() {
             </div>
             <div>
               <img
-               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[100px]"
+               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
                 src={flower1}
                 alt=""
               />
@@ -101,7 +101,7 @@ function Home() {
             </div>
             <div>
               <img
-                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[100px]"
+                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
                 src={flower2}
                 alt=""
               />
@@ -111,7 +111,7 @@ function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center md:text-left">
             <div>
               <img
-               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[100px]"
+               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
                 src={flower3}
                 alt=""
               />
@@ -119,7 +119,7 @@ function Home() {
             </div>
             <div>
               <img
-                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[100px]"
+                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
                 src={flower4}
                 alt=""
               />
@@ -127,7 +127,7 @@ function Home() {
             </div>
             <div className="mb-[30px] md:mb-[0px]">
               <img
-               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[100px]"
+               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
                 src={flower5}
                 alt=""
               />

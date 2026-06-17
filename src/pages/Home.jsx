@@ -15,6 +15,7 @@ import bgImage2 from "/image/bg-image2.png";
 import eliorImage from "/image/elior.png";
 import bodyImage from "/image/bodyImage.png";
 import bodyImage2 from "/image/bodyImage2.png";
+import handImg from "/image/handImag.png"
 
 function Home() {
   return (
@@ -27,7 +28,7 @@ function Home() {
     bg-center bg-cover
     px-5 md:px-12 lg:px-[50px]
     pt-[180px] md:pt-[250px] lg:pt-[300px]
-    w-full
+    w-full md:h-[500px]
   "
 > <div className="mb-[-50px]">
 
@@ -82,10 +83,10 @@ function Home() {
         </h1>
 
         <div className="">
-         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 md:mb-[60px] gap-10  text-center md:text-left">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 md:mb-[60px] gap-10  ">
             <div>
               <img
-                className="w-full max-w-[260px] md:h-[300px] object-cover md:mb-[10px] md:ml-[0px] ml-[80px]"
+                className="w-full max-w-[260px] md:h-[300px] object-cover md:mb-[10px] md:ml-[0px]"
                 src={flower}
                 alt=""
               />
@@ -93,7 +94,7 @@ function Home() {
             </div>
             <div>
               <img
-               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
+               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] "
                 src={flower1}
                 alt=""
               />
@@ -101,17 +102,17 @@ function Home() {
             </div>
             <div>
               <img
-                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
+                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px]"
                 src={flower2}
                 alt=""
               />
               <p>Mugwort</p>
             </div>
           </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
             <div>
               <img
-               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
+               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] "
                 src={flower3}
                 alt=""
               />
@@ -119,7 +120,7 @@ function Home() {
             </div>
             <div>
               <img
-                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
+                className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] "
                 src={flower4}
                 alt=""
               />
@@ -127,7 +128,7 @@ function Home() {
             </div>
             <div className="mb-[30px] md:mb-[0px]">
               <img
-               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] ml-[80px]"
+               className="w-full max-w-[260px] h-[300px] object-cover mb-[10px]  md:ml-[0px] "
                 src={flower5}
                 alt=""
               />
@@ -211,23 +212,22 @@ function Home() {
           <div className="flex flex-col md:flex-row w-full">
             <div>
               <img
-               className=" w-full md:w-[300px]  md:h-[450px]  h-[500px]  px-4 py-8 md:px-0 md:py-0"
+               className=" w-full md:w-[240px]  md:h-[300px]  h-[500px]  px-4 py-8 md:px-0 md:py-0"
                 src={bodyImage}
-                alt="bodyImage"
+                alt=""
               />
             </div>
-            <div className="bg-[#8f6424] md:w-[300px] md:h-[450px] text-center ">
-              <div className="mt-[60%] md:mt-[350px] text-center">
-                <div className="flex text-[#fff] justify-center  ">
-                  <h1 className="mt-[-100px] flex ">
+            <div className="bg-[#8f6424] md:w-[250px] md:h-[300px] h-[300px]  px-4 py-8 md:px-0 md:py-0 md:m-[0px] m-[20px]">
+              <div className=" md:mt-[80px] text-center">
+                <div className="flex text-[#fff] justify-center md:mb-[10px] md:mt-0 mt-[40px]">
                   <AiTwotoneStar />
                   <AiTwotoneStar />
                   <AiTwotoneStar />
                   <AiTwotoneStar />
                   <AiTwotoneStar />
-                  </h1>
+                 
                 </div>
-                <p className="text-[#fff] mb-[20px] mt-[-200px] ">
+                <p className="text-[#fff] md:mt-0 mt-[40px]">
                   “ I have been using this for two weeks and my skin feels so
                   much calmer and hydrated. The texture is light but still
                   nourishing perfect for daily use! “
@@ -236,31 +236,48 @@ function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row w-full">
+          <div className="flex flex-col md:flex-row w-full ">
             <div>
               <img
-              className=" w-full md:w-[330px] md:h-[450px] h-[492px] text-center px-4 py-8 md:px-0 md:py-0"
+              className=" w-full md:w-[240px] md:h-[300px] h-[500px] text-center px-4 py-8 md:px-0 md:py-0"
                 src={bodyImage2}
-                alt="bodyImage"
+                alt=""
               />
             </div>
-            <div className="bg-[#8f6424] md:w-[330px] md:h-[450px] text-center ">
-              <div className="mt-[60%] md:mt-[350px] ">
-                <div className="flex text-[#fff] justify-center mb-[5px]">
-                  <h1 className="flex mt-[-100px]">
+            <div className="bg-[#8f6424] md:w-[250px] md:h-[300px] h-[300px] text-center  px-4 py-8 md:px-0 md:py-0 md:m-[0px] m-[20px]">
+              <div className=" md:mt-[80px] ">
+                <div className="flex text-[#fff] justify-center mb-[10px] md:mt-0 mt-[40px]">
+                 
                   <AiTwotoneStar />
                   <AiTwotoneStar />
                   <AiTwotoneStar />
                   <AiTwotoneStar />
                   <AiTwotoneStar />
-                  </h1>
+                
                 </div>
-                <p className="text-[#fff] mb-[20px] mt-[-200px] ">
+                <p className="text-[#fff] md:mt-0 mt-[40px]">
                   “ I have been using this for two weeks and my skin feels so
                   much calmer and hydrated. The texture is light but still
                   nourishing perfect for daily use! “
                 </p>
               </div>
+            </div>
+          </div>
+          <div className="flex  flex-col md:flex-row w-full ">
+            <div>
+              <img
+              className=" w-full md:w-[240px] md:h-[300px] px-4 py-8 md:px-0 md:py-0"
+              src={handImg} alt="" />
+            </div>
+            <div className="md:w-[250px] md:h-[300px] h-[300px] bg-[#8f6424] text-center px-4 py-8 md:px-0 md:py-0 md:m-[0px] m-[20px]">
+             <div className="flex mb-[10px] text-[#fff] justify-center  md:mt-[80px] md:mt-0 mt-[40px]">
+              <AiTwotoneStar />
+              <AiTwotoneStar />
+              <AiTwotoneStar />
+              <AiTwotoneStar />
+              <AiTwotoneStar />
+             </div>
+             <p className="text-[#fff] md:mt-0 mt-[40px]"> “ I’ve been using this for two weeks and my skin feels so much calmer and hydrated. The texture is light but still nourishing perfect for daily use! “</p>
             </div>
           </div>
         </div>

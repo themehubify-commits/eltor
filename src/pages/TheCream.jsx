@@ -83,7 +83,7 @@ function TheCream() {
               />
             </div>
             <div>
-              <img src={selectedImage} className="w-full max-w-[500px] h-[550px] md:h-[500px] cursor-pointer" alt="" />
+              <img src={selectedImage} className="w-full max-w-[500px] h-[500px] md:h-[500px] cursor-pointer" alt="" />
             </div>
           </div>
         </div>

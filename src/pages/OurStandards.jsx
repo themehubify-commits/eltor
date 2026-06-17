@@ -140,7 +140,7 @@ function OurStandards() {
             style={{ backgroundImage: `url(${bg7})`,
                  backgroundPosition: "-25% center" }}
 
-            className="w-full h-auto bg-center bg-cover py-[40px]"
+            className="w-full h-auto bg-center bg-cover py-[30px]"
           >
             <section className="text-[#8f6424] ml-[20px] md:ml-[80px] mt-[30px] pr-[20px]">
               <h5 className="text-[12px] mb-[20px] mt-[50px]">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <>
@@ -28,7 +29,7 @@ function Footer() {
             <div className="flex gap-4 text-lg">
              <a href="https://www.instagram.com/sajiebwebdav/"> <FaInstagram className="cursor-pointer" /> </a>
              <a href="https://www.facebook.com/Themehubify"> <FaFacebookF className="cursor-pointer" /> </a>
-              <a href="#"><FaXTwitter className="cursor-pointer" /></a>
+              <a href="#"><FaLinkedinIn className="cursor-pointer" /></a>
             </div>
           </div>
         </div>

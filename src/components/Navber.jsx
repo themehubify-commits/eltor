@@ -28,14 +28,14 @@ export default function Navber() {
             ELTOR
           </div>
 
-          <div className="flex items-center gap-5 md:gap-10 text-lg md:mr-[80px] mr-3">
+          <div className="flex items-center gap-5 md:gap-10 text-lg md:mr-[80px] mr-5">
             <FaUser className="cursor-pointer hidden md:block" />
             <FaShoppingBag className="cursor-pointer" />
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden text-xl"
+              className="md:hidden text-xl cursor-pointer"
             >
               {menuOpen ? <FaTimes /> : <FaBars />}
             </button>

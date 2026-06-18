@@ -9,13 +9,15 @@ import bg6 from "/image3/bg4.jpg"
 import { IoMdStar } from "react-icons/io";
 import { IoMdStarHalf } from "react-icons/io";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 function TheCream() {
   const [count, setCount] = useState(1);
   const [open, setOpen] = useState(null);
   const [selectedImage, setSelectedImage] = useState(bg4)
-
+  const navigate = useNavigate()
+  
   const increase = () => {
     setCount(count + 1);
   };
@@ -49,6 +51,21 @@ function TheCream() {
     { star: 1, count: 0, width: "0%" },
   ];
 
+
+
+  const handleAddToCart = () => {
+  const product = {
+    id: 1,
+    name: "Intensive Moisture Cream",
+    price: 30,
+    quantity: count,
+    image: selectedImage,
+  };
+
+  localStorage.setItem("cart", JSON.stringify(product));
+
+     navigate("/cart")
+}
   
   return (
     <>
@@ -132,7 +149,9 @@ function TheCream() {
               +
             </button>
           </div>
-          <button className="text-[#fff] bg-black cursor-pointer w-full p-[8px] mb-[20px]">
+          <button
+          onClick={handleAddToCart}
+          className="text-[#fff] bg-black cursor-pointer w-full p-[8px] mb-[20px]">
             ADD TO CART
           </button>
 

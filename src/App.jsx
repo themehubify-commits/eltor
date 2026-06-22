@@ -7,6 +7,9 @@ import TheCream from './pages/TheCream'
 import Home from './pages/Home'
 
 import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
+import Payment from './pages/Payment'
+import Success from './pages/Success'
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
       <Route path='/sclence' element={<Sclence />} />
       <Route path='/thecream' element={<TheCream />} />
       <Route path='/cart' element={<Cart />} />
+      <Route path='checkout' element={<Checkout />} />
+      <Route path='payment' element={<Payment />} />
+      <Route path='success' element={<Success />} />
     </Routes>
 
     </>

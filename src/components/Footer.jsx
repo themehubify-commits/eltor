@@ -29,7 +29,7 @@ function Footer() {
             <div className="flex gap-4 text-lg">
              <a href="https://www.instagram.com/sajiebwebdav/"> <FaInstagram className="cursor-pointer" /> </a>
              <a href="https://www.facebook.com/Themehubify"> <FaFacebookF className="cursor-pointer" /> </a>
-              <a href="#"><FaLinkedinIn className="cursor-pointer" /></a>
+              <a href="https://www.linkedin.com/in/sajib-kumar-das-34a693383/"><FaLinkedinIn className="cursor-pointer" /></a>
             </div>
           </div>
         </div>

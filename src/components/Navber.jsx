@@ -28,8 +28,8 @@ export default function Navber() {
             ELTOR
           </div>
 
-          <div className="flex items-center gap-5 md:gap-10 text-lg md:mr-[80px] mr-5">
-            <FaUser className="cursor-pointer hidden md:block" />
+          <div className="flex items-center gap-3 md:gap-10 text-lg md:mr-[80px] mr-6">
+            <FaUser className="cursor-pointer" />
             <FaShoppingBag className="cursor-pointer" />
 
             {/* Mobile Menu Button */}

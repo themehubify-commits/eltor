@@ -83,14 +83,14 @@ const total = cart.price * cart.quantity;
 
               <div className="flex justify-between">
                 <span>Tax</span>
-                <span>$0</span>
+                <span>$0.99</span>
               </div>
 
               <hr />
 
               <div className="flex justify-between text-lg font-bold">
                 <span>Total</span>
-                <span>${total}</span>
+                <span>${.99+total}</span>
               </div>
             </div>
 

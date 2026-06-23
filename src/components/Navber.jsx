@@ -29,7 +29,9 @@ export default function Navber() {
           </div>
 
           <div className="flex items-center gap-3 md:gap-10 text-lg md:mr-[80px] mr-6">
-            <FaUser className="cursor-pointer" />
+            <FaUser
+            
+            className="cursor-pointer" />
             <FaShoppingBag className="cursor-pointer" />
 
             {/* Mobile Menu Button */}

@@ -1,121 +1,140 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function Cart() {
   const navigate = useNavigate();
 
-  const storedCart = JSON.parse(localStorage.getItem("cart"));
+  const cart = JSON.parse(localStorage.getItem("cart"));
 
-  const [quantity, setQuantity] = useState(
-    storedCart?.quantity || 1
-  );
-
-  if (!storedCart) {
+  if (!cart) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <h1 className="text-2xl font-bold">Your Cart Is Empty</h1>
+      <div className="min-h-screen flex items-center justify-center bg-[#f8f6f3] px-4">
+        <div className="bg-white p-8 rounded-3xl shadow-lg text-center max-w-md w-full">
+          <h1 className="text-2xl font-bold mb-4 text-[#8f6424]">
+            Your Cart is Empty
+          </h1>
+
+          <p className="text-gray-500 mb-6">
+            Looks like you haven't added anything yet.
+          </p>
+
+          <button
+            onClick={() => navigate("/")}
+            className="bg-[#8f6424] text-white px-6 py-3 rounded-xl hover:opacity-90 transition"
+          >
+            Continue Shopping
+          </button>
+        </div>
       </div>
     );
   }
 
-  const total = storedCart.price * quantity;
+  const subtotal = cart.price * cart.quantity;
+  const shipping = 0;
+  const total = subtotal + shipping;
 
-  const increaseQty = () => {
-    setQuantity(quantity + 1);
-  };
-
-  const decreaseQty = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-
-  const removeCart = () => {
+  const removeItem = () => {
     localStorage.removeItem("cart");
-    window.location.reload();
+    navigate("/");
   };
 
   return (
-    <div className="bg-[#fafafa] min-h-screen px-4 py-8">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-[#f8f6f3] py-10 px-4">
+      <div className="max-w-5xl mx-auto">
 
-        <h1 className="text-3xl font-bold text-center mb-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-[#8f6424] mb-10">
           Shopping Cart
         </h1>
 
-        <div className="bg-white rounded-2xl shadow-lg p-5 md:p-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-          <div className="flex flex-col md:flex-row gap-6 items-center">
+          {/* Product Card */}
+          <div className="lg:col-span-2 bg-white rounded-3xl shadow-lg p-6">
 
-            <img
-              src={storedCart.image}
-              alt={storedCart.name}
-              className="w-40 h-40 object-cover rounded-xl"
-            />
+            <div className="flex flex-col sm:flex-row gap-6 items-center">
 
-            <div className="flex-1 text-center md:text-left">
+              <img
+                src={cart.image}
+                alt={cart.name}
+                className="w-40 h-40 object-cover rounded-2xl"
+              />
 
-              <h2 className="text-2xl font-semibold">
-                {storedCart.name}
-              </h2>
+              <div className="flex-1 text-center sm:text-left">
 
-              <p className="text-gray-600 mt-2">
-                Price: ${storedCart.price}
-              </p>
+                <h2 className="text-2xl font-semibold mb-2">
+                  {cart.name}
+                </h2>
 
-              <div className="flex justify-center md:justify-start items-center gap-3 mt-5">
+                <p className="text-gray-500 mb-2">
+                  Premium Skincare Product
+                </p>
 
-                <button
-                  onClick={decreaseQty}
-                  className="w-10 h-10 border rounded-lg text-xl"
-                >
-                  -
-                </button>
+                <p className="text-lg font-semibold text-[#8f6424]">
+                  ${cart.price}
+                </p>
 
-                <span className="text-lg font-semibold">
-                  {quantity}
-                </span>
-
-                <button
-                  onClick={increaseQty}
-                  className="w-10 h-10 border rounded-lg text-xl"
-                >
-                  +
-                </button>
-
+                <div className="mt-4 inline-block bg-[#F7F0E4] px-4 py-2 rounded-full">
+                  Quantity: {cart.quantity}
+                </div>
               </div>
-
             </div>
+
+            <button
+              onClick={removeItem}
+              className="mt-6 border border-red-500 text-red-500 px-5 py-2 rounded-xl hover:bg-red-500 hover:text-white transition"
+            >
+              Remove Item
+            </button>
           </div>
 
-          <div className="border-t mt-8 pt-6">
+          {/* Order Summary */}
+          <div className="bg-white rounded-3xl shadow-lg p-6 h-fit">
 
-            <div className="flex justify-between mb-3">
-              <span>Subtotal</span>
-              <span>${total}</span>
-            </div>
+            <h2 className="text-2xl font-semibold text-[#8f6424] mb-6">
+              Order Summary
+            </h2>
 
-            <div className="flex justify-between font-bold text-lg">
-              <span>Total</span>
-              <span>${total}</span>
+            <div className="space-y-4">
+
+              <div className="flex justify-between text-gray-600">
+                <span>Subtotal</span>
+                <span>${subtotal}</span>
+              </div>
+
+              <div className="flex justify-between text-gray-600">
+                <span>Shipping</span>
+                <span>Free</span>
+              </div>
+
+              <hr />
+
+              <div className="flex justify-between text-xl font-bold text-[#8f6424]">
+                <span>Total</span>
+                <span>${total}</span>
+              </div>
+
             </div>
 
             <button
               onClick={() => navigate("/checkout")}
-              className="w-full bg-black text-white py-3 rounded-xl mt-6 hover:opacity-90 transition"
+              className="w-full mt-8 bg-black text-white py-4 rounded-xl hover:opacity-90 transition"
             >
               Proceed To Checkout
             </button>
 
             <button
-              onClick={removeCart}
-              className="w-full border border-red-500 text-red-500 py-3 rounded-xl mt-3 hover:bg-red-500 hover:text-white transition"
+              onClick={() => navigate("/")}
+              className="w-full mt-4 border border-[#8f6424] text-[#8f6424] py-4 rounded-xl hover:bg-[#8f6424] hover:text-white transition"
             >
-              Remove Item
+              Continue Shopping
             </button>
 
-          </div>
+            <div className="mt-6 text-sm text-gray-500 text-center">
+              🔒 Secure Checkout <br />
+              🚚 Free Shipping Available
+            </div>
 
+          </div>
         </div>
       </div>
     </div>

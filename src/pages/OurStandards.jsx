@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer";                   
 import bg from "/image1/bg.jpg";
 import bg1 from "/image1/bg1.png";
 import bg2 from "/image1/bg2.jpg";

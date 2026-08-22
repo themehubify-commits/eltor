@@ -53,7 +53,7 @@ function Payment() {
                   : "border-gray-200 hover:border-pink-400"
               }`}
             >
-              <h3 className="font-bold text-pink-600 text-lg">bKash</h3>
+              <h3 className="font-bold text-pink-600 text-lg cursor-pointer">bKash</h3>
             </button>
 
             <button
@@ -64,7 +64,7 @@ function Payment() {
                   : "border-gray-200 hover:border-orange-400"
               }`}
             >
-              <h3 className="font-bold text-orange-600 text-lg">Nagad</h3>
+              <h3 className="font-bold text-orange-600 text-lg cursor-pointer">Nagad</h3>
             </button>
 
             <button
@@ -75,7 +75,7 @@ function Payment() {
                   : "border-gray-200 hover:border-purple-400"
               }`}
             >
-              <h3 className="font-bold text-purple-600 text-lg">Rocket</h3>
+              <h3 className="font-bold text-purple-600 text-lg cursor-pointer">Rocket</h3>
             </button>
 
             <button
@@ -86,7 +86,7 @@ function Payment() {
                   : "border-gray-200 hover:border-green-400"
               }`}
             >
-              <h3 className="font-bold text-green-600 text-lg">Upay</h3>
+              <h3 className="font-bold text-green-600 text-lg cursor-pointer">Upay</h3>
             </button>
           </div>
 
@@ -143,7 +143,7 @@ function Payment() {
           {/* Button */}
           <button
             onClick={handlePayment}
-            className="w-full mt-8 bg-[#8f6424] text-white py-4 rounded-xl hover:opacity-90 transition font-medium text-lg"
+            className="w-full mt-8 bg-[#8f6424] text-white py-4 rounded-xl hover:opacity-90 transition font-medium text-lg cursor-pointer"
           >
             Complete Payment
           </button>

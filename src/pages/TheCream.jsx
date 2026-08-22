@@ -264,7 +264,7 @@ function TheCream() {
                 <IoMdStar />
               </h1>
                 <h4 className="mb-[15px]">Cant stop using it!</h4>
-                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br className="hidden md:block" /> apply - or tap in my face. I feel like a dermatologist now :) </p>
+                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br className="hidden md:block" /> apply - or tap in my face. I feel like a dermatologist now : </p>
             </div>
             <div>
                  <p className="mt-0 md:mt-[-20px] ml-0 md:ml-[-70px]">2 days ago</p>
@@ -287,7 +287,7 @@ function TheCream() {
                 <IoMdStar />
               </h1>
                 <h4 className="mb-[15px]">Cant stop using it!</h4>
-                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br className="hidden md:block" /> apply - or tap in my face. I feel like a dermatologist now :) </p>
+                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br className="hidden md:block" /> apply - or tap in my face. I feel like a dermatologist now : </p>
             </div>
             <div>
                  <p className="mt-0 md:mt-[-20px] ml-0 md:ml-[-70px]">2 days ago</p>
@@ -310,7 +310,7 @@ function TheCream() {
                 <IoMdStar />
               </h1>
                 <h4 className="mb-[15px]">Cant stop using it!</h4>
-                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br className="hidden md:block" /> apply - or tap in my face. I feel like a dermatologist now :) </p>
+                <p className="text-[11px]">I am new to face serums as I have only used creams and oils so far. This product is a game changer in my morning routine. The serum hydrates my skin all day and is super easy to <br className="hidden md:block" /> apply - or tap in my face. I feel like a dermatologist now : </p>
             </div>
             <div>
                  <p className="mt-0 md:mt-[-20px] ml-0 md:ml-[-70px]">2 days ago</p>

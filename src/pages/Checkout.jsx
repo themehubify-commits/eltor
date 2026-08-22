@@ -93,7 +93,7 @@ const Checkout = () => {
             <select
               value={district}
               onChange={(e) => setDistrict(e.target.value)}
-              className="w-full border rounded-xl p-3 mt-4 outline-none focus:border-[#8f6424]"
+              className="w-full border rounded-xl p-3 mt-4 outline-none focus:border-[#8f6424] cursor-pointer"
             >
               <option value="">Select District</option>
               <option value="Dhaka">Dhaka</option>
@@ -122,7 +122,7 @@ const Checkout = () => {
 
             <button
               onClick={() => navigate("/payment")}
-              className="w-full mt-6 bg-[#8f6424] text-white py-4 rounded-xl hover:opacity-90 transition"
+              className="w-full mt-6 bg-[#8f6424] text-white py-4 rounded-xl hover:opacity-90 transition cursor-pointer"
             >
               Continue To Payment
             </button>

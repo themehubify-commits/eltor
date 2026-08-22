@@ -81,7 +81,7 @@ function Cart() {
 
             <button
               onClick={removeItem}
-              className="mt-6 border border-red-500 text-red-500 px-5 py-2 rounded-xl hover:bg-red-500 hover:text-white transition"
+              className="mt-6 border border-red-500 text-red-500 px-5 py-2 rounded-xl hover:bg-red-500 hover:text-white transition cursor-pointer"
             >
               Remove Item
             </button>
@@ -117,14 +117,14 @@ function Cart() {
 
             <button
               onClick={() => navigate("/checkout")}
-              className="w-full mt-8 bg-black text-white py-4 rounded-xl hover:opacity-90 transition"
+              className="w-full mt-8 bg-black text-white py-4 rounded-xl hover:opacity-90 transition cursor-pointer"
             >
               Proceed To Checkout
             </button>
 
             <button
               onClick={() => navigate("/")}
-              className="w-full mt-4 border border-[#8f6424] text-[#8f6424] py-4 rounded-xl hover:bg-[#8f6424] hover:text-white transition"
+              className="w-full mt-4 border border-[#8f6424] text-[#8f6424] py-4 rounded-xl hover:bg-[#8f6424] hover:text-white transition cursor-pointer"
             >
               Continue Shopping
             </button>

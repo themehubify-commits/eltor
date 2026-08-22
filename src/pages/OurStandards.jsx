@@ -185,7 +185,7 @@ function OurStandards() {
           </div>
         </section>
 
-        <section className="text-[#8f6424] mt-[60px] md:mt-0">
+        <section className="text-[#8f6424] mt-[60px] md:mt-0"> 
           <h5 className="text-[12px] text-center md:text-left md:ml-[45%] mb-[30px]">
             KEY BENEFIT 02
           </h5>
@@ -194,6 +194,129 @@ function OurStandards() {
             DEEP HYDRATION & SKIN BALANCE
           </h1>
           <br />
+
+          <div className="mx-auto mt-5 h-[1px] w-20 bg-[#d9c0a0]"></div>
+
+          <div className="relative mx-auto mt-8 h-[490px] max-w-[1000px]">
+
+            <div className="absolute left-0 top-[40px] z-20 w-[230px] text-left md:text-right md:left-[40px]">
+
+              <h3 className="font-serif text-[18px] font-medium text-[#99621f] md:text-[21px]">HYALURONIC ACID</h3>
+              <p className="mt-2 text-[7px] leading-[1.5] text-[#9d6e36] md:text-[8px]">Multi-layer hydration that delivers <br /> moisture and long-lasting hydration</p>
+
+            </div>
+
+            <div className="absolute left-[230px] top-[125px] h-[1px] w-[115px] rotate-[-25deg] bg-[#cda66f] md:block" />
+
+            <div className="absolute left-[340px] top-[105px] hidden h-[5px] w-[5px] rounded-full bg-[#a56b24] md:block" />
+
+            <div className="absolute right-0 top-[35px] z-20 w-[200px] text-right  md:text-left md:right-[55px]">
+              <h3 className="font-serif text-[17px]  font-medium text-[#99621f] md:text-[20px]">NIACINAMIDE</h3>
+              <p className="mt-2 text-[7px] leading-[1.5] text-[#9d6e36] md:text-[8px]">Improve overall skin condition <br /> while refining skin tone and texture</p>
+            </div>
+
+            <div className="absolute right-[250px] top-[105px]  h-[1px] w-[110px] rotate-[28deg] bg-[#cda66f] md:block" />
+            {/* <div className="absolute right-[340px] top-[145px] hidden h-[5px] w-[5px] rounded-full bg-[#a56b24] md:block" /> */}
+
+            <div           className="
+            absolute
+            left-1/2
+            top-[55px]
+            h-[300px]
+            w-[300px]
+            -translate-x-1/2
+            rounded-full
+            border
+            border-[#d6b88e]
+            md:h-[350px]
+            md:w-[350px]
+          ">
+
+              <div   className="
+              absolute
+              left-1/2
+              top-1/2
+              h-[245px]
+              w-[245px]
+              -translate-x-1/2
+              -translate-y-1/2
+              overflow-hidden
+              rounded-full
+              shadow-[0_5px_30px_rgba(120,85,40,0.12)]
+              md:h-[285px]
+              md:w-[285px]
+            ">
+              <div
+              className="
+                absolute
+                inset-0
+                bg-[radial-gradient(circle_at_25%_30%,#fffdf8_0%,#f6eee1_30%,#d7c6aa_55%,#9d8a6a_80%,#70644f_100%)]
+              "
+            />
+            <div
+              className="
+                absolute
+                -left-[20%]
+                top-[10%]
+                h-[110%]
+                w-[60%]
+                rotate-[15deg]
+                rounded-full
+                bg-[#fffaf1]
+                opacity-90
+                blur-[18px]
+              "
+            />
+             <div className="absolute left-[48%] top-[32%] h-2 w-2 rounded-full border border-white/70" />
+            <div className="absolute left-[57%] top-[28%] h-1.5 w-1.5 rounded-full border border-white/70" />
+            <div className="absolute left-[63%] top-[38%] h-2 w-2 rounded-full border border-white/70" />
+            <div className="absolute left-[53%] top-[45%] h-1 w-1 rounded-full bg-white/80" />
+            <div className="absolute left-[68%] top-[47%] h-1.5 w-1.5 rounded-full border border-white/70" />
+            <div className="absolute left-[60%] top-[55%] h-1 w-1 rounded-full bg-white/80" />
+            <div className="absolute left-[72%] top-[57%] h-2 w-2 rounded-full border border-white/60" />
+              </div>
+              <span  className="absolute right-[38px] top-[15px] h-[5px] w-[5px] rounded-full bg-[#a56b24]">
+
+              </span>
+              <span className="absolute bottom-[38px] right-[18px] h-[5px] w-[5px] rounded-full bg-[#a56b24]" />
+              <span className="absolute bottom-[15px] left-[45px] h-[5px] w-[5px] rounded-full bg-[#a56b24]" />
+            </div>
+
+            
+        <div className="absolute bottom-[45px] left-[60px] z-20 w-[180px] text-left md:text-right md:left-[120px]">
+
+          <h3 className="font-serif text-[17px] font-medium text-[#99621f] md:text-[20px]">
+            SQUALANE
+          </h3>
+
+          <p className="mt-2 text-[7px] leading-[1.5] text-[#9d6e36] md:text-[8px]">
+            Prevent moisture loss while
+            <br />
+            keeping the skin soft and flexible
+          </p>
+
+        </div>
+
+         <div className="absolute bottom-[95px] left-[290px]  h-[1px] w-[105px] rotate-[20deg] bg-[#cda66f] md:block" />
+
+          <div className="absolute bottom-[50px] right-[30px] z-20 w-[190px] text-right md:text-left md:right-[100px]">
+
+          <h3 className="font-serif text-[17px] font-medium text-[#99621f] md:text-[20px]">
+            ADENOSINE
+          </h3>
+
+          <p className="mt-2 text-[7px] leading-[1.5] text-[#9d6e36] md:text-[8px]">
+            Prevent moisture loss while keeping the
+            <br />
+            skin soft and flexible
+          </p>
+
+        </div>
+
+         <div className="absolute bottom-[100px] right-[275px]  h-[1px] w-[95px] rotate-[-20deg] bg-[#cda66f] md:block" />
+
+          </div>
+
           <div
             style={{
               backgroundImage: `url(${bg7})`,
